@@ -1,0 +1,61 @@
+@keyframes from-down-to-up {
+    from {
+        opacity: 0.5;
+        transform: translatex(-2000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatey(0%);
+    }
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    padding-top: 50px;
+    height: 100vh;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+}
+#home {
+    display: flex;
+    height: 80vh;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top:150px;
+    animation-name: from-down-to-up;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    
+}
+#podbor{
+    display: flex;
+    height: 100vh;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    // background-color: aqua;
+}
+#catalogue{
+    display: flex;
+    // background-color: coral;
+    height: 100vh;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+}
+#contacts{
+    display: flex;
+    
+    height: 100vh;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    // background-color: aqua;
+}

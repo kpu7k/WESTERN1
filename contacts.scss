@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(272deg, #ffffff, #c4ffc1);
+    background-size: 400% 400%;
+    -webkit-animation: bgGradPage 42s ease infinite;
+    -moz-animation: bgGradPage 42s ease infinite;
+    animation: bgGradPage 42s ease infinite;
+}
+
+.contacts-content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.opis {
+    display: block;
+    width: 90%;
+    height: 120px;
+    margin-top: 20px;
+    background-color: #fff;
+    border:1px solid black;
+    
+}
+.watch{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-top:100px; 
+}

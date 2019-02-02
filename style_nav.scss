@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Oranienbaum');
+
+
+html {
+    background: linear-gradient(272deg, #ffffff, #c4ffc1);
+background-size: 400% 400%;
+    -webkit-animation: bgGradPage 42s ease infinite;
+-moz-animation: bgGradPage 42s ease infinite;
+animation: bgGradPage 42s ease infinite;
+
+}
+@-webkit-keyframes bgGradPage {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-moz-keyframes bgGradPage {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@keyframes bgGradPage { 
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-container {
+    display: flex;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgb(57, 171, 111);
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    align-items: center;
+    z-index: 10;
+
+    .navbar-brand {
+        font-family: 'Cardo', serif;
+        font-size: 36px;
+
+    }
+
+    .nav-menu {
+        font-family: 'Oranienbaum', serif;
+        font-size: 20px;
+        display: flex;
+
+        li {
+            list-style: none;
+        }
+
+        li:focus,
+        li:target {
+            background-color: transparent;
+            border-bottom: 2px solid rgba(57, 171, 111, 1);
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 1);
+        margin: 5px;
+        text-shadow: 3px 5px 8px black;
+        
+
+    }
+
+    a:hover {
+        transform: scale(1.07);
+        text-shadow: 7px 9px 12px black;
+        transition: 0.3s ease;
+        color: rgba(115, 238, 172, 0.8);
+
+    }
+
+    .nav-menu-container {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .nav-toggle {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+
+    }
+
+    .btn-nav-toggle {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-nav-toggle:focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .btn-nav-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu-container2.navbar-device-width {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: flex-end;
+        top: 0px;
+        right: 0px;
+        padding-top: 62px;
+        width: 100%;
+        height: 1200%;
+
+        .nav-menu {
+            flex-direction: column;
+            justify-self: flex-end;
+            height: 100%;
+            width: 60%;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+
+            li {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                border-bottom: 1px solid white;
+                height: calc(100%/7);
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+
+                }
+
+            }
+
+            li:hover {
+                transform: scale(1.1);
+                border: 1px solid black;
+                background-image: radial-gradient(150px, #333, rgb(252, 236, 11));
+            }
+        }
+    }
+
+    .nav-toggle {
+        .btn-nav-toggle.btn-nav-toggle1 {
+            background-color: rgba(115, 238, 172, 0.8);
+        }
+
+        .btn-nav-toggle {
+            .path-1-toggle.path-1-toggle1 {
+                transform-origin: center;
+                transform: rotate(45deg);
+                position: absolute;
+                transition: 0.3s ease;
+            }
+
+            .path-3-toggle.path-3-toggle1 {
+                position: absolute;
+                transform-origin: center;
+                transform: rotate(-45deg);
+                transition: 0.3s ease;
+            }
+        }
+    }
+}

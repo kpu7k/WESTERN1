@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Oranienbaum");
+html {
+  background: linear-gradient(272deg, #ffffff, #c4ffc1);
+  background-size: 400% 400%;
+  -webkit-animation: bgGradPage 42s ease infinite;
+  animation: bgGradPage 42s ease infinite;
+}
+
+@-webkit-keyframes bgGradPage {
+  0% {
+    background-position: 0% 97%;
+  }
+  50% {
+    background-position: 100% 4%;
+  }
+  100% {
+    background-position: 0% 97%;
+  }
+}
+
+@keyframes bgGradPage {
+  0% {
+    background-position: 0% 97%;
+  }
+  50% {
+    background-position: 100% 4%;
+  }
+  100% {
+    background-position: 0% 97%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid #39ab6f;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.header-container .navbar-brand {
+  font-family: 'Cardo', serif;
+  font-size: 36px;
+}
+
+.header-container .nav-menu {
+  font-family: 'Oranienbaum', serif;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-container .nav-menu li {
+  list-style: none;
+}
+
+.header-container .nav-menu li:focus,
+.header-container .nav-menu li:target {
+  background-color: transparent;
+  border-bottom: 2px solid #39ab6f;
+}
+
+.header-container a {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  text-shadow: 3px 5px 8px black;
+}
+
+.header-container a:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  text-shadow: 7px 9px 12px black;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: rgba(115, 238, 172, 0.8);
+}
+
+.header-container .nav-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .nav-toggle {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.header-container .btn-nav-toggle {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-container .btn-nav-toggle:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+@media (min-width: 769px) {
+  .btn-nav-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu-container2.navbar-device-width {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    top: 0px;
+    right: 0px;
+    padding-top: 62px;
+    width: 100%;
+    height: 1200%;
+  }
+  .nav-menu-container2.navbar-device-width .nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: flex-end;
+    height: 100%;
+    width: 60%;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .nav-menu-container2.navbar-device-width .nav-menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+    height: calc(100%/7);
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 30px;
+  }
+  .nav-menu-container2.navbar-device-width .nav-menu li a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .nav-menu-container2.navbar-device-width .nav-menu li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border: 1px solid black;
+    background-image: radial-gradient(150px, #333, #fcec0b);
+  }
+  .nav-toggle .btn-nav-toggle.btn-nav-toggle1 {
+    background-color: rgba(115, 238, 172, 0.8);
+  }
+  .nav-toggle .btn-nav-toggle .path-1-toggle.path-1-toggle1 {
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .nav-toggle .btn-nav-toggle .path-3-toggle.path-3-toggle1 {
+    position: absolute;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+}
+/*# sourceMappingURL=style_nav.css.map */
